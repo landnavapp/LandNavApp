@@ -130,4 +130,4 @@ DEVELOPER NOTES
 
 Unfortunately, I don't have much time to program updates so I hope this app works for you 'as is'. It's pretty small and 'feature-thin' because I programmed it to work on my FR630. But, if you need to practice Land Nav, this app will help! I hope to post the sourcecode soon.
  
-(this readme.txt file last updated on 20170402)
+(this readme.txt file last updated on 20170401)
