@@ -1,0 +1,64 @@
+<resources>
+    <drawables>
+    	<bitmap id="Li" filename="i.png" />
+    </drawables>
+    <strings>
+    	<string id="Ap">LandNav</string>
+    	
+		<string id="sA"		>Mode</string>
+    		<string id="s1"		>1. Randomize within boundary</string>
+    		<string id="s2"		>2. Points in random order</string>
+    		<string id="s3"		>3. Points in list order</string>
+    	
+    	<string id="sC"		>Points [Lat,Lon_Lat,Lon_]</string>
+        <string id="sZ"		>Show distance and bearing</string>
+        <string id="sH"		>Show self-correcting hints</string>
+		<string id="sP"		>100m pace count beep</string>
+
+		<string id="sD"		>Magnetic declination (E is -)</string>
+		<string id="sW"		>Point radius in m</string>
+		<string id="sS"		>Minimum leg in m</string>
+		<string id="sL"		>Maximum leg in m</string>
+		<string id="sM"		>Show MGRS not Lat,Lon</string>
+		<string id="sB"		>Save next 10 pts for re-run</string>
+	</strings>
+    
+    <properties>    
+ 		<property id="A" type="number"	>1</property>
+     	<property id="C" type="string"	>38.994336,-76.894223 38.994095,-76.893279 38.992560,-76.894127 38.992593,-76.894652 </property>
+    	<property id="Z" type="boolean"	>true</property>
+    	<property id="H" type="boolean"	>true</property>
+ 		<property id="P" type="boolean"	>true</property>
+ 		
+ 		<property id="D" type="float"	>0.0</property>
+ 		<property id="W" type="number"	>10</property>
+ 		<property id="S" type="number"  >25</property>
+ 		<property id="L" type="number"  >300</property>
+ 		<property id="M" type="boolean"	>false</property>
+ 		<property id="B" type="boolean"	>false</property>
+    </properties>
+
+    <settings>
+        <setting propertyKey="@Properties.A" title="@Strings.sA"><settingConfig type="list">
+            <listEntry value="1">@Strings.s1</listEntry>
+            <listEntry value="2">@Strings.s2</listEntry>
+            <listEntry value="3">@Strings.s3</listEntry>
+		</settingConfig></setting>
+
+        <setting propertyKey="@Properties.C" title="@Strings.sC"><settingConfig type="alphaNumeric" maxLength="275" required="true" /></setting>
+        <setting propertyKey="@Properties.Z" title="@Strings.sZ"><settingConfig type="boolean" /></setting>
+        <setting propertyKey="@Properties.H" title="@Strings.sH"><settingConfig type="boolean" /></setting>
+        <setting propertyKey="@Properties.P" title="@Strings.sP"><settingConfig type="boolean" /></setting>
+
+        <setting propertyKey="@Properties.D" title="@Strings.sD"><settingConfig type="numeric" required="true" min="-90" max="90" /></setting>
+        <setting propertyKey="@Properties.W" title="@Strings.sW"><settingConfig type="numeric" required="true" min="5" max="25" /></setting>
+        <setting propertyKey="@Properties.S" title="@Strings.sS"><settingConfig type="numeric" required="true" min="10" /></setting>
+        <setting propertyKey="@Properties.L" title="@Strings.sL"><settingConfig type="numeric" required="true" min="100" /></setting>
+        <setting propertyKey="@Properties.M" title="@Strings.sM"><settingConfig type="boolean" /></setting>
+        <setting propertyKey="@Properties.B" title="@Strings.sB"><settingConfig type="boolean" /></setting>
+    </settings>
+
+
+</resources>
+
+

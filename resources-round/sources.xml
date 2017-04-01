@@ -1,0 +1,10 @@
+<build>
+  <exclude file="../source/LandNav-semiround.mc" />
+  <exclude file="../source/LandNav-fr920xt.mc" />
+  <exclude file="../source/LandNav-rectangle-148x205.mc" />
+  <exclude file="../source/LandNav-rectangle-240x400.mc" />
+  <exclude file="../source/LandNav-rectangle-200x265.mc" />
+  <exclude file="../source/LandNav-round-240x240.mc" />
+  <exclude file="../source/LandNav-fenix5s.mc" />
+  <exclude file="../source/LandNav-vivoactive.mc" />
+</build>
